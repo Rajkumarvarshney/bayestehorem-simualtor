@@ -1,1 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.simulator-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(0, 0, 50, 0.7), rgba(0, 80, 90, 0.7)), url('https://www.transparenttextures.com/patterns/diagmonds-light.png');
+  background-blend-mode: overlay;
+  padding: 20px;
+}
+
+.glass-card {
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px 25px;
+  max-width: 420px;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.glass-card label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.glass-card input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.glass-card input:focus {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.02);
+}
+
+.glass-card button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.glass-card button:hover {
+  transform: scale(1.05);
+}
+
+.result {
+  font-size: 22px;
+  font-weight: 700;
+  color: #38f9d7;
+  text-align: center;
+}
+
+.result span {
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
